@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaRunnerConsole", "PizzaRunnerConsole\PizzaRunnerConsole.csproj", "{DC156A32-1393-4F07-BEFE-604F07DE0485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaRunner.Business", "PizzaRunner.Business\PizzaRunner.Business.csproj", "{C25F79F1-31D9-4C5E-8865-FBB75C0AA32F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC156A32-1393-4F07-BEFE-604F07DE0485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC156A32-1393-4F07-BEFE-604F07DE0485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC156A32-1393-4F07-BEFE-604F07DE0485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC156A32-1393-4F07-BEFE-604F07DE0485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C25F79F1-31D9-4C5E-8865-FBB75C0AA32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25F79F1-31D9-4C5E-8865-FBB75C0AA32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25F79F1-31D9-4C5E-8865-FBB75C0AA32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25F79F1-31D9-4C5E-8865-FBB75C0AA32F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
