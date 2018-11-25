@@ -5,15 +5,15 @@ namespace PizzaRunner.Business.Customers
     public class Account
     {
         private readonly string _owner;
-        private double _balance;
+        private decimal _balance;
 
-        public Account(string owner, double balance)
+        public Account(string owner, decimal balance)
         {
             _owner = owner;
             _balance = balance;
         }
 
-        public double Balance()
+        public decimal Balance()
         {
             return _balance;
         }
@@ -23,7 +23,7 @@ namespace PizzaRunner.Business.Customers
             return _owner;
         }
 
-        public void WithDraw(double amount)
+        public void WithDraw(decimal amount)
         {
             if (amount < 0)
                 throw new ArgumentOutOfRangeException(nameof(amount), "cannot withdraw negative amount");
@@ -31,7 +31,7 @@ namespace PizzaRunner.Business.Customers
             _balance -= amount;
         }
 
-        public void Deposit(double amount)
+        public void Deposit(decimal amount)
         {
             if (amount < 0)
                 throw new ArgumentOutOfRangeException(nameof(amount), "cannot deposit negative amount");
