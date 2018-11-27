@@ -42,7 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Customers\Account.cs" />
+    <Compile Include="Customers\AccountService.cs" />
+    <Compile Include="Customers\IAccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaRunner.Data\PizzaRunner.Data.csproj">
+      <Project>{0FE14EC2-E121-4F42-91B2-76C87D14783D}</Project>
+      <Name>PizzaRunner.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
